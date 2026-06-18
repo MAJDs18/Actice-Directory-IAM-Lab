@@ -1,4 +1,39 @@
- ## Verification & Key Artifacts
+ # Windows Server 2022: Active Directory & IAM Security Hardening Lab
+
+## Project Overview
+This project demonstrates the deployment, configuration, and security hardening of an enterprise Identity and Access Management (IAM) infrastructure using **Windows Server 2022** inside a virtualized environment (**Oracle VirtualBox**). 
+
+The primary objective was to architect a production-ready **Active Directory Domain Services (AD DS)** environment, implement a secure administrative hierarchy, and enforce system-level security restrictions using **Group Policy Objects (GPOs)** based on the Principle of Least Privilege (PoLP).
+
+---
+
+## Technical Specifications & Topology
+* **Hypervisor:** Oracle VirtualBox
+* **Operating System:** Windows Server 2022 Datacenter (Evaluation Edition)
+* **Domain Name:** `cyberlab.local`
+* **Core Services:** Active Directory Domain Services (AD DS), DNS, Group Policy Management
+
+---
+
+## Architecture & Implementation Steps
+
+### 1. Active Directory Installation & Domain Promotion
+* Configured static IP addressing and internal network settings to isolate the environment.
+* Installed the AD DS role via Server Manager and promoted the server to a **Domain Controller (DC)**, establishing the root domain forest.
+
+### 2. Identity & Access Management (IAM) Hierarchy Design
+* Designed and engineered a structured **Organizational Unit (OU)** tree to separate administrative boundaries, departments, and assets.
+* Provisioned standard domain user accounts (e.g., `Ahmad`) within designated functional OUs to test policy propagation.
+* Applied **Role-Based Access Control (RBAC)** to ensure users only have access to resources required for their explicit operational roles.
+
+### 3. Group Policy Security Hardening
+* Created and linked custom **Group Policy Objects (GPOs)** to enforce specific baseline security controls across endpoints.
+* **Applied Rule:** *Prohibit access to Control Panel and PC settings* to reduce the system's attack surface and prevent unauthorized configuration changes by non-administrative users.
+* Validated policy enforcement on target organizational containers using command-line administrative utilities.
+
+---
+
+## Verification & Key Artifacts
 
 ### 1. Active Directory Identity Hierarchy (IAM Blueprint)
 ![Active Directory Infrastructure](images/iam.jpeg)
