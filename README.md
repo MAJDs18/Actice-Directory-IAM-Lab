@@ -1,4 +1,4 @@
- # Windows Server 2022: Active Directory & IAM Security Hardening Lab
+# Windows Server 2022: Active Directory & IAM Security Hardening Lab
 
 ## Project Overview
 This project demonstrates the deployment, configuration, and security hardening of an enterprise Identity and Access Management (IAM) infrastructure using **Windows Server 2022** inside a virtualized environment (**Oracle VirtualBox**). 
@@ -35,18 +35,18 @@ The primary objective was to architect a production-ready **Active Directory Dom
 
 ## Verification & Key Artifacts
 
-### 1. Active Directory Identity Hierarchy (IAM Blueprint)
+### 1. تسلسل هوية Active Directory (مخطط IAM)
 ![Active Directory Infrastructure](images/iam.jpeg)
 *Evidence of structured OU engineering, showcasing administrative container separation and domain account provisioning.*
 
-### 2. GPO Hardening Rule Configuration
+### 2. تكوين قواعد تقوية GPO
 ![Group Policy Configuration](images/gpo.jpeg)
 *Technical proof showing the specific administrative template configuration utilized to restrict system-level changes on endpoints.*
 
-### 3. Server Promotion & Domain Access Control
+### 3. الترويج للخوادم والتحكم في الوصول إلى النطاقات
 ![Domain Controller Verification](images/domain.jpeg)
 *Active administration session verifying successful domain forest registration and secure administrator privileges.*
 
-### 4. Group Policy Security Propagation
+### 4. نشر سياسة المجموعات في أمن
 ![GPO Enforcement Success](images/success.jpeg)
 *Command-line validation showing execution of policy synchronization, confirming the endpoint infrastructure has successfully received and applied the hardening rules.*
