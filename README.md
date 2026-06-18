@@ -37,7 +37,7 @@ The primary objective was to architect a production-ready **Active Directory Dom
 
 ### 1. الترويج للخوادم والتحكم في الوصول إلى النطاقات (Server Promotion)
 ![Domain Controller Verification](images/domain.jpeg)
-*Active domain verification screen capturing the successful server promotion and administrative user context.*
+*Active administration session verifying successful domain forest registration and secure administrator privileges.*
 
 ### 2. تسلسل هوية Active Directory (مخطط IAM)
 ![Active Directory Infrastructure](images/iam.jpeg)
