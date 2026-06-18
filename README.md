@@ -35,17 +35,22 @@ The primary objective was to architect a production-ready **Active Directory Dom
 
 ## Verification & Key Artifacts
 
-### 1. الترويج للخوادم والتحكم في الوصول إلى النطاقات (Server Promotion)
+### 1. شاشة تسجيل دخول المسؤول بالنطاق (Domain Administrator Login)
 ![Domain Controller Verification](images/domain.jpeg)
-*Active administration session verifying successful domain forest registration and secure administrator privileges.*
+*Active administration session verifying successful domain forest registration and secure administrator privileges under the domain context.*
 
-### 2. تسلسل هوية Active Directory (مخطط IAM)
+### 2. واجهة مدير الخادم وبداية التهيئة (Server Manager Dashboard)
+![Server Manager Interface](images/block_evidence.jpeg)
+*Initial Server Manager environment execution, establishing the core management baseline for the secure server infrastructure.*
+
+### 3. تسلسل هوية Active Directory (مخطط IAM للأقسام والمستخدمين)
 ![Active Directory Infrastructure](images/iam.jpeg)
-*Evidence of structured OU engineering, showcasing administrative container separation and domain account provisioning.*
+*Evidence of structured OU engineering, showcasing administrative container separation and domain account provisioning (e.g., Ahmad).*
 
-### 3. تكوين قواعد تقوية GPO (حظر لوحة التحكم)
+### 4. تكوين قواعد تقوية GPO (حظر لوحة التحكم)
 ![Group Policy Configuration](images/gpo.jpeg)
 *Technical proof showing the specific administrative template configuration utilized to restrict system-level changes on endpoints.*
 
-### 4. نشر سياسة المجموعات في أمن (تحديث السياسات عبر CMD)
-!
+### 5. نشر سياسة المجموعات بنجاح عبر الكوماند (GPO Enforcement via CMD)
+![GPO Enforcement Success](images/success.jpeg)
+*Command-line validation showing successful execution of the policy update via 'gpupdate /force', confirming the infrastructure received the hardening rules.*
